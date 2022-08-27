@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+    <div id="d1">
+
+
+    </div>
+
+    <div id="d2">
+
+
+    </div>
+    <script>
+        var numbers = [19,78,54,76,32];
+
+        numbers.push(47); 
+
+        numbers.unshift(8);
+
+        numbers.pop();
+
+        numbers.shift();
+
+        numbers.splice(3, 1, 96,84,12);
+
+        var newlist = numbers.slice(1, 5);
+
+        numbers.sort();
+
+        numbers.reverse();
+
+        document.getElementById("d1").innerHTML = numbers;
+        document.getElementById("d2").innerHTML = newlist;
+    </script>
+</body>
+</html>

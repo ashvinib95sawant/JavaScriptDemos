@@ -1,0 +1,48 @@
+<html>
+<head>
+</head>
+<body>
+
+    <div id="d1"></div>
+
+    <script>
+
+        /*2.Create an object student with their 3 subjects marks,
+        create a function to calculate total & percentage*/
+
+        var student =
+        {
+
+            English: 80,
+
+            History: 90,
+           
+            Polity: 85,
+
+            total: function ()
+            {
+               var marks = this.English + this.History + this.Polity;
+                
+                return "Total marks : " + marks;
+
+            },
+
+            percentage: function ()
+            {
+
+                marks = this.English + this.History + this.Polity;
+
+                result = marks * 100 / 300;
+
+                return "Percentage: " + result+"%";
+
+            }
+        }
+
+        //document.getElementById("d1").innerHTML = student.total();
+        document.getElementById("d1").innerHTML = student.percentage();
+
+
+    </script>
+</body>
+</html>

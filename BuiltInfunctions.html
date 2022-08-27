@@ -1,0 +1,43 @@
+<html>
+<head></head>
+<body>
+    <script>
+        var text = "red,green,blue,black,white,pink";
+
+        var text2 = "Hello to all";
+
+        var text3 = "Test purpose";
+
+       
+
+        document.write(text.length);  // property to get the string length
+
+        var result = text.concat(" ", text2, " ", text3);
+
+        document.write("<br>" + result);
+
+
+        document.write("<br/>" + text.toUpperCase());
+
+        document.write("<br/>" + text.toLowerCase());
+
+
+        //trim ->text.trim();  ltrip, rtrim
+
+        document.write(text.IndexOf('b'));
+        document.write(text.lastIndexOf('b'));
+
+        var res = text.slice(3, 8);
+
+        document.write(res);
+
+        document.write(text2.replace("Hello", "Hi"));
+
+        var res1 = text.split(",");
+
+        console.log(res1);
+
+
+    </script>
+</body>
+</html>
