@@ -1,0 +1,71 @@
+<html>
+<head><b>Student Info</b></head><br />
+<body>
+    Name : <input type="text" id="t1" /><br /> <br />
+    Address : <input type="text" id="t2" /><br /><br />
+    Date of Birth : <input type="date" id="t3" /><br /><br />
+    Email Id : <input type="email" id="t4" /><br /><br />
+    <form>                
+        Qualification : 
+        <select>
+            <option>Select</option>
+            <option>BCS</option>
+            <option>BCA</option>
+            <option>BE</option>
+            <option>BSC</option>
+            <option>MTech</option>
+            <option>Other</option>
+        </select>
+           
+    </form>  
+    <form>
+        Stream :
+        <select>
+            <option>Select</option>
+            <option>Electronics and Telecommunications</option>
+            <option>Mechanical</option>
+            <option>Electrical</option>
+            <option>Computer</option>
+            <option>Chemical</option>
+            <option>Biology</option>
+            <option>Physics</option>
+            <option>Other</option>
+        </select>
+    </form>
+ 
+    Mobile Number : <input type="tel" id="t7" /><br /><br />
+    Passout Year : <input type="number" id="t8" /><br /><br />
+
+    <input type="button" value="Submit" onclick="Submit()" />
+    <input type="button" value="Cancel" onclick="Cancel()" />
+
+    <script>
+        function Submit()
+        {
+            var result = confirm("Do you wanto to submit form?");
+
+            if (result == true)
+            {
+                alert("Form submitted successfully");
+            }
+            else
+            {
+                alert("Form cancelled");
+            }
+        }
+        function Cancel()
+        {
+            var result = confirm("Do you wanto to cancel?");
+
+            if (result == true)
+            {
+                alert("Cancelled");
+            }
+            else
+            {
+                alert("Not cancelled");
+            }
+        }
+    </script>
+</body>
+</html>
